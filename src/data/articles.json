@@ -1,0 +1,57 @@
+[
+  {
+    "id": "1",
+    "title": "A Lifetime of Love",
+    "subtitle": "My mother taught me the value of patience, compassion, and courage.",
+    "category": "Inspiration",
+    "imageUrl": "/images/bg1.jpg",
+    "readTime": "3",
+    "likes": 42,
+    "excerpt": "Growing up, I watched my mother navigate life's challenges with grace and unwavering determination.",
+    "content": "Growing up, I watched my mother navigate life's challenges with grace and unwavering determination. She taught me that patience isn't just about waiting, but about maintaining a positive attitude while working hard for what you believe in. Her compassion for others showed me that true strength comes from understanding and empathy. Through her actions, I learned that courage isn't the absence of fear, but the triumph over it. These lessons continue to guide me through my own journey, a precious gift that keeps giving throughout my lifetime."
+  },
+  {
+    "id": "2",
+    "title": "Health Lessons from Mom",
+    "subtitle": "Her green smoothies and yoga routines were more than trends.",
+    "category": "Health",
+    "imageUrl": "/images/bg2.jpg",
+    "readTime": "2",
+    "likes": 30,
+    "excerpt": "Long before wellness became a buzzword, my mother was creating her own health rituals.",
+    "content": "Long before wellness became a buzzword, my mother was creating her own health rituals. Every morning started with a green smoothie—a blend of spinach, banana, and whatever fruits were in season. She didn't call it 'detoxing' or 'clean eating'; for her, it was simply nourishing her body with what it needed. Her yoga practice wasn't about perfect poses or trendy activewear; it was a quiet moment of connection with herself. These weren't passing fads but consistent acts of self-care that she maintained for decades. Now, as health trends come and go, I find myself returning to these fundamental practices she modeled for me."
+  },
+  {
+    "id": "3",
+    "title": "The Art of Resilience",
+    "subtitle": "She faced hardship with a smile, and taught us to do the same.",
+    "category": "Stories",
+    "imageUrl": "/images/bg3.jpg",
+    "readTime": "4",
+    "likes": 55,
+    "excerpt": "When my father passed away unexpectedly, leaving my mother with three young children and a mountain of debt, I watched her world shatter.",
+    "content": "When my father passed away unexpectedly, leaving my mother with three young children and a mountain of debt, I watched her world shatter. Yet, the next morning, she woke up, made us breakfast, and went to work. There were tears, of course, but there was also a determination that outshone her grief. She picked up extra shifts, learned new skills, and never once complained about the hand she'd been dealt. 'Life isn't fair,' she would tell us, 'but it is beautiful if you choose to see it that way.' Through her example, I learned that resilience isn't about being unbreakable—it's about finding strength in the broken places and continuing forward, one step at a time."
+  },
+  {
+    "id": "4",
+    "title": "A Mother's Voice",
+    "subtitle": "Her lullabies still echo in my heart.",
+    "category": "Inspiration",
+    "imageUrl": "/images/bg4.jpg",
+    "readTime": "2",
+    "likes": 37,
+    "excerpt": "My earliest memories are wrapped in the gentle melodies my mother would sing each night.",
+    "content": "My earliest memories are wrapped in the gentle melodies my mother would sing each night. She didn't have a professional singing voice, but to me, it was the most beautiful sound in the world. Those lullabies were more than just a bedtime ritual; they were promises of safety, assurances of love, and bridges to dreamland. Even now, decades later, when life becomes overwhelming, I close my eyes and can hear her voice, soft and sure, singing me back to a place of peace. This is perhaps her greatest gift—a voice that continues to guide and comfort me, long after the lullabies have ended."
+  },
+  {
+    "id": "5",
+    "title": "Mom: The Storyteller",
+    "subtitle": "She colored our childhood with fairytales and wisdom.",
+    "category": "Stories",
+    "imageUrl": "/images/bg5.jpg",
+    "readTime": "3",
+    "likes": 28,
+    "excerpt": "My mother turned ordinary moments into extraordinary adventures through the power of her stories.",
+    "content": "My mother turned ordinary moments into extraordinary adventures through the power of her stories. Grocery shopping became a quest for magical ingredients, and bedtime was a journey to distant lands where brave children overcame impossible odds. But her greatest stories weren't fantasies—they were tales of our family's history, of ancestors who crossed oceans and survived hardships to give us the life we have today. Through her stories, she connected us to our roots while encouraging us to write bold new chapters of our own. She taught me that we are all part of an ongoing narrative, and that the stories we tell ourselves and others shape the world we live in."
+  }
+]

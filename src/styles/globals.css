@@ -1,0 +1,514 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ========== ROOT VARIABLES ========== */
+:root {
+  --font-geist-sans: 'Geist', sans-serif;
+  --font-geist-mono: 'Geist Mono', monospace;
+  --primary-color: #e11d48;
+  --primary-dark: #be123c;
+  --text-color: #000000;
+  --text-secondary: #000000;
+  --rose-50: #fff1f2;
+  --rose-100: #ffe4e6;
+  --rose-200: #fecdd3;
+  --rose-300: #fda4af;
+  --rose-400: #fb7185;
+  --rose-500: #f43f5e;
+  --rose-600: #e11d48;
+  --rose-700: #be123c;
+  --rose-800: #9f1239;
+  --rose-900: #881337;
+  --pink-50: #fdf2f8;
+  --pink-100: #fce7f3;
+  --pink-200: #fbcfe8;
+  --pink-300: #f9a8d4;
+  --pink-400: #f472b6;
+  --pink-500: #ec4899;
+  --pink-600: #db2777;
+  --pink-700: #be185d;
+  --pink-800: #9d174d;
+  --pink-900: #831843;
+}
+
+/* ========== BASE STYLES ========== */
+body {
+  font-family: var(--font-geist-sans);
+  background-image: url("/images/bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  color: var(--text-color);
+  line-height: 1.6;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* ========== LAYOUT ========== */
+.main-container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+}
+
+.centered-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  max-width: 1200px;
+}
+
+/* ========== TYPOGRAPHY ========== */
+h1, h2, h3, h4 {
+  font-weight: 700;
+  color: var(--primary-dark);
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+  line-height: 1.2;
+}
+
+h2 {
+  font-size: 2rem;
+  line-height: 1.3;
+}
+
+h3 {
+  font-size: 1.75rem;
+  line-height: 1.4;
+}
+
+h4 {
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+
+p {
+  font-size: 1rem;
+  color: var(--text-secondary);
+  margin-bottom: 1rem;
+  text-align: center;
+  max-width: 800px;
+}
+
+/* ========== NAVIGATION ========== */
+nav {
+  margin: 1.5rem 0;
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+/* ========== BUTTONS ========== */
+button {
+  padding: 0.75rem 1.5rem;
+  background-color: var(--primary-color);
+  color: #fff;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: block;
+  margin: 0 auto;
+}
+
+button:hover {
+  background-color: var(--primary-dark);
+  transform: translateY(-1px);
+}
+
+/* ========== CARDS ========== */
+.card {
+  background-color: rgba(255, 255, 255, 0.85);
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.05);
+  backdrop-filter: blur(4px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* ========== ARTICLE GRID ========== */
+.article-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+  width: 100%;
+  margin: 2rem auto;
+  justify-items: center;
+}
+
+/* ========== TEXT OVERLAY ========== */
+.text-overlay {
+  background-color: rgba(255, 255, 255, 0.85);
+  padding: 2rem;
+  border-radius: 1rem;
+  max-width: 800px;
+  margin: 0 auto;
+  backdrop-filter: blur(4px);
+  text-align: center;
+}
+
+/* ========== LINKS ========== */
+a {
+  color: var(--primary-dark);
+  text-decoration: none;
+  transition: color 0.3s ease;
+  display: inline-block;
+}
+
+a:hover {
+  color: var(--primary-color);
+  text-decoration: underline;
+}
+
+/* ========== FORMS AND INPUTS ========== */
+input, textarea {
+  padding: 0.75rem 1rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  width: 100%;
+  max-width: 400px;
+  margin: 0.5rem auto;
+  transition: border-color 0.3s ease;
+  display: block;
+}
+
+input:focus, textarea:focus {
+  outline: none;
+  border-color: var(--primary-color);
+}
+
+/* ========== SCROLL CONTAINER ========== */
+.scroll-container {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-padding: 1rem;
+  gap: 1rem;
+  padding: 1rem;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  width: 100%;
+  justify-content: center;
+}
+
+.scroll-container::-webkit-scrollbar {
+  display: none;
+}
+
+.scroll-item {
+  scroll-snap-align: center;
+  flex-shrink: 0;
+  width: 20rem;
+  margin: 0 auto;
+}
+
+/* ========== UTILITY CLASSES ========== */
+.text-center {
+  text-align: center;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.px-container {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.center-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* ========== MOTHER'S DAY COMPONENTS ========== */
+.mothers-day-header {
+  position: relative;
+  background: linear-gradient(135deg, var(--pink-100), var(--rose-100));
+  padding: 3rem 1rem;
+  overflow: hidden;
+  width: 100%;
+  text-align: center;
+}
+
+.mothers-day-header .header-content {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  text-align: center;
+}
+
+.mothers-day-header h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--rose-800);
+  margin-bottom: 1rem;
+  font-family: serif;
+  letter-spacing: -0.025em;
+}
+
+.mothers-day-header .header-divider {
+  width: 6rem;
+  height: 0.25rem;
+  background-color: var(--rose-300);
+  margin: 0 auto 1.5rem;
+  border-radius: 9999px;
+}
+
+.mothers-day-header p {
+  font-size: 1.25rem;
+  color: var(--rose-600);
+  max-width: 42rem;
+  margin: 0 auto;
+}
+
+/* ========== PROFESSIONAL FOOTER ========== */
+footer {
+  width: 100%;
+  padding: 3rem 1rem;
+  margin-top: auto;
+  background: linear-gradient(135deg, var(--pink-50), var(--rose-50));
+  box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  width: 100%;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.footer-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-section h3 {
+  color: var(--rose-800);
+  margin-bottom: 1.5rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+  position: relative;
+  padding-bottom: 0.5rem;
+}
+
+.footer-section h3::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40px;
+  height: 2px;
+  background-color: var(--rose-300);
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  width: 100%;
+}
+
+.footer-links a {
+  color: var(--rose-600);
+  transition: all 0.3s ease;
+  padding: 0.25rem 0;
+  position: relative;
+}
+
+.footer-links a:hover {
+  color: var(--rose-800);
+  transform: translateX(5px);
+}
+
+.footer-links a::before {
+  content: '→';
+  position: absolute;
+  left: -15px;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.footer-links a:hover::before {
+  opacity: 1;
+  left: -10px;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--rose-200);
+  color: var(--rose-700);
+  width: 100%;
+}
+
+.social-links {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+
+.social-links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: var(--rose-100);
+  color: var(--rose-600);
+  transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+  background-color: var(--rose-200);
+  color: var(--rose-800);
+  transform: translateY(-3px);
+}
+
+/* ========== RESPONSIVE ADJUSTMENTS ========== */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+  
+  h2 {
+    font-size: 1.75rem;
+  }
+  
+  .article-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  nav {
+    gap: 1rem;
+  }
+  
+  .mothers-day-header {
+    padding: 2rem 1rem;
+  }
+  
+  .mothers-day-header h1 {
+    font-size: 2rem;
+  }
+  
+  .mothers-day-header p {
+    font-size: 1rem;
+  }
+  
+  .scroll-item {
+    width: 16rem;
+  }
+  
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .footer-section {
+    margin-bottom: 1.5rem;
+  }
+  
+  .footer-section h3 {
+    margin-bottom: 1rem;
+  }
+}
+
+/* ========== ANIMATIONS ========== */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.fade-in {
+  animation: fadeIn 0.5s ease-out forwards;
+}
+
+/* ========== HORIZONTAL SCROLL ========== */
+.horizontal-scroll-container {
+  display: flex;
+  overflow-x: auto;
+  padding-bottom: 1.5rem;
+  margin: 0 auto;
+  padding: 0 1rem;
+  scrollbar-width: none;
+  max-width: 1200px;
+  justify-content: center;
+}
+
+.horizontal-scroll-container::-webkit-scrollbar {
+  display: none;
+}
+
+.horizontal-scroll-content {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.scroll-item {
+  flex: 0 0 auto;
+  width: 18rem;
+  background-color: white;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: all 0.3s ease;
+  margin: 0 0.5rem;
+}
+
+.scroll-item:hover {
+  transform: translateY(-0.25rem);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+/* ========== END OF FILE ========== */
